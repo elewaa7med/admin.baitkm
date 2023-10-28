@@ -1,0 +1,36 @@
+@import "./global/helper";
+@import "./global/index";
+@import "./global/form";
+@import "./global/page";
+@import "./global/reset";
+@import "./global/icons";
+
+@import "./pages/signin";
+@import "./pages/dashboard";
+@import "./pages/push-notifications";
+@import "./pages/approved";
+@import "./pages/settings";
+@import "./pages/user-details";
+@import "./pages/announcement-details";
+@import "./pages/notification-modal.scss";
+@import "./pages/rejection-modal.scss";
+@import "./pages/support.scss";
+@import "./pages/block-user";
+
+@import "./components/table";
+@import "./components/modal";
+@import "./components/select";
+@import "./components/paging";
+@import "./components/sidebar";
+@import "./components/page-loader";
+@import "./components/create-favourite.scss";
+
+@import "./packages/alertify";
+@import "./packages/react-ladda";
+@import "~alertifyjs/build/css/alertify.css";
+@import "~react-datetime/css/react-datetime.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~react-datepicker/dist/react-datepicker.css";
+
+@import '../../components/multi-select/style.scss';

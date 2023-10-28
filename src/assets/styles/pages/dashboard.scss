@@ -1,0 +1,339 @@
+@font-face {
+  font-family: "Bressay";
+  src: url("../fonts/BressayBold.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.B-statistics{
+  margin          : 28px -28px 0;
+  display         : flex;
+  flex-wrap       : wrap;
+  align-items     : flex-start;
+  justify-content : flex-start;
+
+  .B-padding-statistics {
+    text-decoration : none;
+
+    width   : 25%;
+    padding : 28px;
+
+    .B-statistics-box {
+      padding    : 25px;
+      box-shadow : 0 3px 6px rgba(0, 0, 0, 0.2);
+      min-height : 155px;
+
+      > span {
+        color     : #07A75C;
+        font-size : 44px;
+  font-family: "Bressay";
+
+      }
+      > p{
+        color      : #7B7B7B;
+        font-size  : 16px;
+        width      : 125px;
+        word-wrap  : normal;
+        word-break : normal;
+        margin-top : 15px
+      }
+    }
+  }
+}
+
+
+.B-data-table {
+
+  > .B-data-table-header {
+    border-top    : 0;
+  }
+
+  > .B-data-table-body {
+
+    box-shadow : none;
+    min-height : initial;
+
+    > ul:last-child { border-bottom: 0; }
+  }
+
+  .B-dashboard-top-users-rank {
+    top      : 5px;
+    left     : 11px;
+    position : absolute;
+  }
+
+  .B-dashboard-top-users-rank-icon {
+
+    width  : 30px !important;
+    height : 35px !important;
+  }
+}
+
+.B-chart-dought{
+  width: 200px;
+}
+
+.B-employments-dought{
+  padding : 25px 40px 40px 25px;
+  margin-left: 20px;
+  margin-top: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  min-width: 45%;
+
+  .B-employment-box{
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+  }
+}
+.B-dashboard-employment{
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-top: 40px;
+
+}
+.B-dashboard-employment-title{
+  font-size: 24px;
+  span{
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+.B-about-device{
+
+  ul{
+
+    list-style: none;
+
+    li + li{
+
+      margin-top: 40px
+
+    }
+
+    li{
+
+      display: flex;
+      align-items: center;
+      span{
+
+        width: 24px;
+        height: 24px;
+        border-radius: 7px;
+        display: block;
+
+      }
+      p{
+        font-size: 20px;
+        color: #6A6A6A;
+        margin-left: 25px
+      }
+    }
+  }
+}
+
+.B-employments-bar{
+  padding : 25px 40px 10px 25px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  min-width: 490px;
+  width: 100%;
+  margin-left: 35px;
+    canvas {
+      height : 270px !important;
+    }
+}
+
+.B-employment-bar{
+  width: 100%;
+  margin-top: 30px;
+  canvas{
+    width: 100% !important;
+  }
+}
+.B-annoucement-pending-list{
+  margin-top: 46px;
+  .B-annoucement-dashboard-header{
+    padding: 0 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .B-annoucement-dashboard-title{
+      font-size: 24px;
+
+    }
+
+    .view-all-pendings{
+      a{
+        font-size: 16px;
+        color: #EE6B45;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 1px;
+
+        &::before{
+          position: absolute;
+          content: '';
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          height: 1px;
+          background-color:#EE6B45;
+          width: 0;
+          transition: 0.3s;
+        }
+        &:hover::before{
+          width: 100%;
+        }
+
+      }
+
+    }
+  }
+
+  .B-announcement-list {
+    overflow-x: unset;
+    padding-bottom: 0;
+
+    .B-announcement-list-box {
+      overflow-x: auto;
+      margin-top: 15px;
+
+      .B-data-table {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width:1500px){
+
+  .B-dashboard-employment{
+    flex-direction: column;
+    .B-employments-bar{
+      margin-left: 0;
+      margin-top: 40px;
+    }
+  }
+  .B-employments-dought{
+    max-width: 100%;
+    min-width: auto;
+    .B-employment-box{
+      flex-direction: column;
+    margin-top: 35px;
+
+      .B-chart-dought{
+        width: 300px;
+        canvas{
+          width: 300px !important;
+          height: 300px !important;
+        }
+      }
+    }
+    .B-about-device{
+      margin-top: 30px;
+      width: 80%;
+      ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+          padding: 10px;
+        }
+      }
+      ul li +li{
+        margin-top: 0;
+      }
+    }
+  }
+
+}
+@media (max-width:1200px){
+  .B-statistics{
+    .B-padding-statistics{
+      width: 50%;
+    }
+  }
+  .B-announcement-user .B-announcement-img{
+    width: 85px !important;
+    height: 85px !important;
+  }
+  .B-announcement-list .B-data-table-body > ul, .B-announcement-list .B-data-table-body a{
+    min-height: 120px !important;
+  }
+  .B-announcement-user .B-announcement-user-info > .B-announcement-sub-title,
+  .B-data-table > .B-data-table-body > ul > li, .B-data-table > .B-data-table-body > a > li,
+  .announcement-user > h3,
+  .announcement-prop .announcement-status{
+    font-size: 12px !important;
+  }
+}
+
+
+//   Media for Dashboard page
+
+@media (max-width:991px){
+  .B-statistics{
+    margin: 28px -15px 0;
+    .B-padding-statistics{
+        padding: 15px;
+      }
+  }
+  .B-employments-dought{
+    .B-employment-box {
+      .B-chart-dought {
+        width  : 200px !important;
+        height : 200px;
+
+        canvas {
+          width  : 200px !important;
+          height : 200px !important;
+        }
+      }
+    }
+  }
+  .B-employments-bar {
+    max-width : 100%;
+    min-width : auto;
+  }
+  .B-annoucement-dashboard-title, .B-dashboard-employment-title {
+    font-size : 20px !important;
+  }
+}
+
+.P-date-filter {
+  width : 230px;
+
+  .I-select-header {
+    border-radius : 4px;
+    box-shadow    : 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.P-chart-header {
+  position : relative;
+}
+
+.P-date-picker-filter {
+  position         : absolute;
+  right            : 0;
+  top              : 60px;
+  background-color : white;
+  padding          : 10px;
+  border-radius    : 12px;
+  box-shadow       : 0 0 3px rgba(0, 0, 0, 0.3);
+
+  .P-date-picker-filter-box {
+    padding : 10px;
+
+    p {
+      margin-bottom : 10px;
+
+    }
+  }
+}

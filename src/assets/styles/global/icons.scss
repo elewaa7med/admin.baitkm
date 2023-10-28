@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icomoon.eot?bawq39");
+  src: url("../fonts/icomoon.eot?bawq39#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?bawq39") format("truetype"), url("../fonts/icomoon.woff?bawq39") format("woff"),
+    url("../fonts/icomoon.svg?bawq39#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-upload:before {
+  content: "\e91d";
+}
+.icon-arrow_back:before {
+  content: "\e900";
+}
+.icon-arrow_down:before {
+  content: "\e901";
+}
+.icon-arrow_right:before {
+  content: "\e902";
+}
+.icon-arrow_right02:before {
+  content: "\e903";
+}
+.icon-arrow_up:before {
+  content: "\e904";
+}
+.icon-calendar:before {
+  content: "\e905";
+}
+.icon-cancel:before {
+  content: "\e906";
+}
+.icon-check01:before {
+  content: "\e907";
+}
+.icon-check02:before {
+  content: "\e908";
+}
+.icon-dashboard:before {
+  content: "\e909";
+}
+.icon-edit:before {
+  content: "\e90a";
+}
+.icon-help:before {
+  content: "\e90b";
+}
+.icon-icons_search-copy:before {
+  content: "\e90c";
+}
+.icon-menu_hidden:before {
+  content: "\e90d";
+}
+.icon-menu_show:before {
+  content: "\e90e";
+}
+.icon-notifications01:before {
+  content: "\e90f";
+}
+.icon-ic_settings:before {
+  content: "\e910 ";
+}
+.icon-ic_settings:after{
+  content: "\e911";
+  position: absolute;
+  left: 15px;
+
+}
+.icon-play01:before {
+  content: "\e911";
+}
+.icon-play01_1:before {
+  content: "\e912";
+}
+.icon-plus01:before {
+  content: "\e913";
+}
+.icon-plus02:before {
+  content: "\e914";
+}
+.icon-plus03:before {
+  content: "\e915";
+}
+.icon-prizes_amount:before {
+  content: "\e916";
+}
+.icon-right_answers:before {
+  content: "\e917";
+}
+.icon-search:before {
+  content: "\e918";
+}
+.icon-transactions:before {
+  content: "\e919";
+}
+.icon-used_questions:before {
+  content: "\e91a";
+}
+.icon-users:before {
+  content: "\e91b";
+}
+.icon-winners:before {
+  content: "\e91c";
+}
+
+.icon-location:before {
+  content: "\e921";
+}

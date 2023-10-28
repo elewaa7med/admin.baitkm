@@ -1,0 +1,452 @@
+.B-notification-modal {
+  .B-notification-title {
+    h3 {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .B-notification-box {
+    margin-top: 35px;
+
+    .B-notification-subtitle {
+      h3 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: normal;
+        color: black;
+      }
+    }
+
+    .B-notification-input-cnt {
+      margin-top: 10px;
+    }
+  }
+  .B-notification-input + .B-notification-input,
+  .B-notification-select {
+    margin-top: 35px;
+  }
+  .B-notification-input {
+    width: 100%;
+    label {
+      display: block;
+      width: 100%;
+
+      input,
+      textarea {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+        color: black;
+        padding: 0 15px;
+        font-style: normal;
+        font-weight: normal;
+        border: 1px solid #a7a7a7;
+
+        &::placeholder {
+          font-size: 16px;
+          color: #a7a7a7;
+          font-style: normal;
+          font-weight: normal;
+        }
+      }
+      textarea {
+        height: 80px;
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  .B-description-change-lang{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+.B-data-notific-time{
+  width: 40%;
+}
+.B-notification-data {
+  max-width: 290px;
+  width: 100%;
+
+  .react-datepicker-wrapper {
+    width: 100%;
+    .react-datepicker__input-container {
+      width: 100%;
+      input {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+        color: black;
+        padding: 0 15px;
+        font-style: normal;
+        font-weight: normal;
+        border: 1px solid #a7a7a7;
+      }
+    }
+  }
+}
+.select-data-time-block{
+
+  width: 100%;
+  position: relative;
+  .selected-time{
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    color: black;
+    padding: 0 15px;
+    font-style: normal;
+    font-weight: normal;
+    border: 1px solid #a7a7a7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    span.selected-time-placeholder{
+      font-size: 15px;
+      color: #a7a7a7;
+      font-style: normal;
+      font-weight: normal;
+      opacity: 1 !important;
+      padding: 0;
+    }
+    span.selected-time-value{
+      font-size: 16px;
+      color: black;
+      font-style: normal;
+      font-weight: normal;
+      opacity: 1 !important;
+      padding: 0;
+    }
+  }
+  .selected-time-clear{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ee6b45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 4px;
+    position: absolute;
+    right: 10px;
+  }
+  .select-data-option {
+    padding: 5px 0;
+    top: 50px;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    margin: 0;
+    z-index: 19999;
+    position: absolute;
+    max-height: 250px;
+    box-shadow: 0 3px 6px rgba(135, 135, 135, 0.16);
+    background: white;
+    overflow-y: auto;
+    ul{
+      li{
+        list-style: none;
+        padding: 3px 15px;
+        cursor: pointer;
+        &:hover{
+          background-color: rgba(222, 222, 222, 0.22);
+        }
+      }
+    }
+  }
+
+}
+.B-notification-time {
+  display: flex;
+  align-items: center;
+  width: 45%;
+
+  span {
+    display: block;
+    color: black;
+    padding: 0 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  .react-datepicker-wrapper {
+    width: 100%;
+    .react-datepicker__input-container {
+      width: 100%;
+      input {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+        color: black;
+        padding: 0 15px;
+        font-style: normal;
+        font-weight: normal;
+        border: 1px solid #a7a7a7;
+      }
+    }
+  }
+}
+
+.B-notification-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+}
+
+.B-notification-input-cnt {
+  width: 100%;
+  .B-select {
+    max-width: 290px;
+    width: 100%;
+
+    .B-select-body {
+      height: 45px !important;
+      font-size: 16px;
+      color: black;
+      font-style: normal;
+      font-weight: normal;
+      border: 1px solid #a7a7a7 !important;
+      border-radius: 0 !important;
+      top: 50px;
+    }
+  }
+  .B-select-placeholder {
+    font-size: 16px;
+    color: #a7a7a7;
+    font-style: normal;
+    font-weight: normal;
+    opacity: 1 !important;
+  }
+  .B-select-header {
+    width: 100%;
+    height: 40px !important;
+    font-size: 16px;
+    color: black;
+    padding: 0 15px !important;
+    font-style: normal;
+    font-weight: normal;
+    border: 1px solid #a7a7a7 !important;
+    border-radius: 0 !important;
+  }
+}
+
+.B-classic-card-control-buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.B-classic-card-cancel-button {
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.B-classic-card-modify-button {
+  width: 173px;
+  height: 45px;
+  background-color: #ee6b45;
+  font-size: 16px;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 45px;
+  border: none;
+  cursor: pointer;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item--selected {
+  background-color: #ee6b45;
+
+  &:hover {
+    background-color: #ee6b45;
+  }
+}
+
+.B-notifselected-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.B-selected-notif {
+  max-width: 290px;
+  width: 100%;
+}
+.B-selected-notif .B-notification-input-cnt .B-select .B-select-body {
+  height: auto !important;
+}
+
+.B-error {
+  box-shadow: 0 3px 6px rgba(238, 107, 69, 0.4);
+}
+
+.alertify-notifier {
+  z-index: 99999;
+}
+
+
+.G-select-announcement-notification {
+  position: relative;
+
+
+  .G-select-announcement-notification-header {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    color: black;
+    padding: 0 15px;
+
+    border: 1px solid #a7a7a7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+
+    .G-selected-announcement-notification-image {
+      width: 30px;
+      height: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 8px;
+    }
+
+    .G-selected-announcement-notification-input {
+      width: 100%;
+      margin-left: 15px;
+
+    }
+
+    label {
+      width: 100%;
+      display: block;
+
+      input {
+        width: 100%;
+        height: 42px;
+        padding: 15px 0;
+        border: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+      }
+    }
+  }
+
+
+  .G-select-announcement-notification-body {
+    position         : absolute;
+    background-color : white;
+    box-shadow       : 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    max-height       : 200px;
+    overflow-y       : auto;
+    width            : 100%;
+    z-index          : 999;
+    bottom           : 110%;
+
+    .B-announcement-user .B-announcement-img {
+      width  : 70px;
+      height : 70px;
+    }
+
+    .B-announcement-user-title {
+      p {
+        font-size : 15px !important;
+      }
+    }
+
+    .B-announcement-user-info {
+      margin-left: 10px;
+    }
+
+    .B-announcement-sub-title {
+      p {
+        font-size: 14px;
+        white-space: nowrap !important;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+
+    .B-announcement-price {
+      margin-top: 5px !important;
+
+      p {
+        margin-left: 0 !important;
+      }
+
+      span {
+        font-size: 12px !important;
+      }
+    }
+
+    .B-announcement-user {
+      transition: 0.3s;
+      padding: 15px;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+.G-notification-announcement{
+  max-width: 100%;
+}
+
+.G-notification-announcement-empty{
+  padding: 15px ;
+  text-align: center;
+}
+
+.P-change-language {
+  display     : flex;
+  align-items : center;
+  margin      : 15px 0;
+
+  li {
+    list-style   : none;
+    font-size    : 16px;
+    font-weight  : 600;
+    cursor       : pointer;
+    margin-right : 20px;
+
+    &.P-active{
+      color: #ee6b45;
+    }
+  }
+}
+
+.P-error{
+  input, textarea, .selected-time, .I-select-header  {
+    border: 1px solid red !important;
+  }
+}

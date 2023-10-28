@@ -1,0 +1,63 @@
+.B-create-favorite-container {
+  position: absolute;
+  max-width: 415px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  padding: 15px;
+  right: -999px;
+  z-index: 998;
+  transform: translateX(1000%);
+  transition: 0.3s;
+  top: 80px;
+  &.show-favorite {
+    transform: translateX(0);
+    right: 100px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-family: "FreightDispBlack";
+    word-break: unset;
+    margin-bottom: 20px;
+  }
+
+  .B-select {
+    width: 100%;
+  }
+
+  @media (max-width: 1500px) {
+    & {
+      right: 20px;
+    }
+  }
+}
+
+.B-create-favouritr-btn-block {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  p {
+    font-size: 16px;
+    color: #7b7b7b;
+    margin-right: 35px;
+    font-style: normal;
+    font-weight: normal;
+    cursor: pointer;
+  }
+}
+
+.B-create-favouritr-btn {
+  button {
+    width: 142px;
+    height: 41px;
+    background-color: #ee6b45;
+    font-size: 16px;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    border: none;
+  }
+}

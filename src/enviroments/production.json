@@ -1,0 +1,4 @@
+{
+  "BASE_URL": "http://api.baitkm.com/",
+  "SOCKET_URL": "wss://api.baitkm.com/"
+}

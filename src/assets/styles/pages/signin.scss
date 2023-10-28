@@ -1,0 +1,86 @@
+.B-signin-page {
+  display: flex;
+  margin: -50px -40px -20px -50px;
+
+  .B-signin-content {
+    width: 500px;
+    margin: auto;
+    max-width: 100%;
+
+    .B-signin-logo {
+      max-width: 133px;
+      height: 50px;
+      margin: 0 auto;
+      img {
+        max-width: 100%;
+        height: 100%;
+      }
+    }
+
+    form {
+      .B-signin-form-content {
+        z-index: 2;
+        padding: 60px 80px 40px 80px;
+        position: relative;
+        background: transparentize(#fff, 0.85);
+
+        a {
+          width: 100%;
+          color: black;
+          margin: 10px 0 30px;
+          cursor: pointer;
+          display: block;
+          font-size: 15px;
+          text-align: right;
+          text-decoration: none;
+        }
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        filter: blur(8px);
+        content: " ";
+        z-index: 1;
+        overflow: hidden;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.B-signin-page.B-page {
+  width: auto;
+  height: auto;
+  padding: 0;
+  overflow: visible;
+}
+
+.B-sign-in-bg {
+  width: 100%;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Bsign-in-right {
+  width: 85%;
+}
+.B-sign-in-right {
+  width: 65%;
+}
+.B-sign-in-left {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.B-form-submit-button {
+  margin-top: 25px;
+}

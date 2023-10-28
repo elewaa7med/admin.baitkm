@@ -1,0 +1,37 @@
+* {
+
+  margin      : 0;
+  padding     : 0;
+  outline     : none;
+  box-sizing  : border-box;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill,
+textarea:-webkit-autofill { box-shadow: 0 0 0 1000px #FFF inset; }
+
+h1, h2, h3, h4, h5, h6, p {
+  
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+body {
+  float      : left;
+  width      : 100%;
+}
+
+button {
+
+  transition : opacity .5s;
+  
+  &[disabled] { opacity: .5; }
+}
+
+textarea {
+  
+  resize      : none;
+  height      : 100px;
+  padding-top : 10px;
+}

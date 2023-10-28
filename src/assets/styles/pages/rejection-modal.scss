@@ -1,0 +1,156 @@
+.B-rejection-title {
+  h3 {
+    font-size: 24px;
+    color: black;
+    font-family: "FreightDispBlack";
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);
+    font-style: normal;
+    font-weight: 500;
+  }
+}
+.B-rejected-checkblock {
+  margin-top: 35px;
+}
+.B-reject-checkbox {
+  width: 100%;
+  label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+
+    input {
+      display: none;
+
+      &:checked + span {
+        border: 1px solid rgba(238, 107, 69, 1);
+
+        &:before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    span {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(203, 203, 203, 1);
+      border-radius: 50%;
+      transition: 0.2s;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(238, 107, 69, 1);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.2s;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    p {
+      font-size: 18px;
+      color: black;
+      font-style: normal;
+      font-weight: normal;
+      padding-left: 35px;
+    }
+  }
+}
+
+.B-reject-checkbox + .B-reject-checkbox {
+  margin-top: 35px;
+}
+
+.B-reject-text {
+  margin-top: 20px;
+  width: 100%;
+  label {
+    width: 100%;
+    display: block;
+
+    textarea {
+      width: 100%;
+      height: 110px;
+      padding: 15px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: normal;
+      color: black;
+      border: 1px solid rgba(167, 167, 167, 1);
+      background-color: transparent;
+      resize: none;
+
+      &::placeholder {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: normal;
+        color: rgba(167, 167, 167, 1);
+      }
+    }
+  }
+}
+
+.B-classic-card-control-buttons {
+  a {
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+.B-approve-block-modal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .B-rejected-checkblock + .B-rejected-checkblock{
+    margin-left: 25px;
+  }
+
+  .B-rejected-checkblock{
+    margin: 0 ;
+    padding: 15px 0;
+    label{
+      display: block;
+    }
+  }
+}
+
+
+.B-approved-modal {
+  .B-reject-text{
+    margin-top: 25px;
+  }
+  input{
+    height: 30px;
+    padding: 0 15px;
+    border: 1px solid #bbbbbb;
+    width: 100%;
+  }
+}
+
+.B-rejection-modal{
+  .B-description-change-lang{
+    margin-top: 20px;
+  }
+}

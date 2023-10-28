@@ -1,0 +1,171 @@
+.B-data-table {
+  border-radius : 12px;
+  padding-top:15px;
+  color : #161515;  
+
+  @media(max-width: 991px){
+    &{
+      min-width: 900px;
+
+    }
+  }
+  > .B-data-table-header {
+    margin          : 0;
+    z-index         : 2;
+    display         : flex;
+    position        : relative;
+    font-size       : 14px;
+    align-items     : center;
+    list-style-type : none;
+    background-color: white;
+    li:first-child, a:first-child{
+      padding-left: 23px;
+    }
+    li:last-child, a:last-child{
+      padding-right: 23px;
+    }
+    > li {
+      padding-right: 15px;
+      height          : 35px;
+      width       : 100%;
+      color       : black;
+      font-size   : 14px;
+      font-weight : bold;
+      border-bottom: 1px solid #ececec;
+    }
+  }
+
+  > .B-data-table-body {
+
+    min-height    : 480px;
+    background    : white;
+
+    a { text-decoration: none; }
+    
+    > ul, > a {
+      color           : black;
+      height          : 90px;
+      margin          : 0;
+      z-index         : 1;
+      display         : flex;
+      position        : relative;
+      font-size       : 14px;
+      align-items     : center;
+      list-style-type : none;
+
+      &:hover > .B-data-table-actions { display: initial !important; }
+      li:first-child, a:first-child{
+        padding-left: 23px;
+      }
+      li:last-child, a:last-child{
+        padding-right: 23px;
+      }
+      > li {
+
+        width         : 100%;
+        height        : 100%;
+        display       : block;
+        position      : relative;
+        overflow      : hidden;
+        font-size     : 15px;
+        white-space   : nowrap;
+        align-items   : center;
+        padding-right : 15px;
+        text-overflow : ellipsis;
+        border-bottom: 1px solid #ececec;
+
+
+        > div {
+        
+          top           : 50%;
+          width         : 100%;
+          float         : left;
+          overflow      : hidden;
+          position      : relative;
+          transform     : translateY(-50%);
+          white-space   : nowrap;
+          padding-right : 15px;
+          text-overflow : ellipsis;
+          > .B-user-name{
+            display     : flex;
+            align-items : center;
+
+            > .B-data-table-image-row {
+              width         : 40px;
+              height        : 40px;
+              border-radius : 50%;
+            }
+            & span{
+              font-size      :16px ;
+              color          : #000;
+              margin-left    : 15px;
+            }
+          }
+
+
+          > .B-data-table-image-row-text {
+
+            height      : 40px;
+            margin-left : 10px;
+            line-height : 40px;
+          }
+
+          .B-data-table-action {
+
+            color        : #959595;
+            cursor       : pointer;
+            font-size    : 40px;
+            font-style   : normal;
+            user-select  : none;
+            margin-right : 10px;
+
+            &[class^="icon-"], &[class*=" icon-"] {
+
+              font-size: 25px;
+            }
+          }
+        }
+
+        &.B-data-table-actions {
+
+          right    : 20px;
+          width    : auto;
+          display  : none;
+          position : absolute;
+        }
+      }
+    }
+  }
+}
+.B-data-empty{
+  min-height: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  align-items: center; justify-content: center;
+  p{
+    
+    color       : black;
+    font-size   : 16px;
+    font-weight : bold;
+  }
+
+  .B-data-empty-img{
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 45px;
+    &:before{
+      font-size: 90px;
+    }
+  }
+}
+
+.B-user-list{
+  .B-data-empty-img{
+    margin-bottom: 20px !important;
+  }
+}

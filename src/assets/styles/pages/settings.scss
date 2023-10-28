@@ -1,0 +1,297 @@
+.settings-components {
+  margin-top: 50px;
+  .setting-input-box + .setting-input-box {
+    margin-top: 80px;
+  }
+  .setting-input-box {
+    &.B-announcement-filter-block{
+      flex-direction: column;
+      margin: 0;
+      .padding-inputs-filter {
+        padding: 0;
+      }
+    }
+    padding: 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+    @media (max-width: 1200px) {
+      & {
+        padding: 20px;
+      }
+    }
+    .setting-input-title {
+      > h3 {
+        font-size: 24px;
+        margin-bottom: 23px;
+      }
+    }
+    .setting-input-textarea {
+      width: 100%;
+      label {
+        display: block;
+        width: 100%;
+        textarea {
+          border: 1px solid #bfbfbf;
+          min-height: 370px;
+          font-size: 18px;
+          padding: 15px;
+          width: 100%;
+          &::placeholder {
+            color: #9a9a9a;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .setting-button-send, .P-add-email-btn {
+      margin-top: 40px;
+
+      button {
+        cursor: pointer;
+        background-color: #ee6b45;
+        width: 173px;
+        height: 41px;
+        border: none;
+        color: white;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.B-covered-img {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.B-add-img-block {
+  margin: 20px -15px -15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .B-padding-added {
+    width: 25%;
+    padding: 15px;
+
+    .B-add-img-box {
+      width: 100%;
+      height: 150px;
+      position: relative;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 6px;
+      overflow: hidden;
+      .B-added-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      .add-or-remove-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .add-img-cover,
+        .remove-img-cover {
+          padding: 4px 15px;
+          background-color: white;
+          color: black;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: normal;
+          border-radius: 2px;
+          transition: 0.3s;
+          transform: translateX(-150%);
+          opacity: 0;
+          visibility: hidden;
+          &:hover {
+            background-color: #ee6b45;
+            color: white;
+          }
+        }
+
+        .remove-img-cover {
+          margin-top: 10px;
+          transform: translateX(150%);
+          opacity: 0;
+          visibility: hidden;
+          &:hover {
+            background-color: #9a9a9a;
+          }
+        }
+      }
+
+      &:hover .add-or-remove-img {
+        opacity: 1;
+        visibility: visible;
+      }
+      &:hover .remove-img-cover,
+      &:hover .add-img-cover {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+      }
+      &:hover {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    label {
+      .B-add-img-inuput {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        transition: 0.3s;
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 150px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.3s;
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+        &:hover::before {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        span {
+          width: 40px;
+          height: 40px;
+          display: block;
+          border: 1px solid #ee6b45;
+          border-radius: 50%;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: normal;
+          color: #ee6b45;
+          text-align: center;
+          position: relative;
+        }
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.B-added-img-components {
+  margin-top: 20px;
+}
+
+
+.settings-container{
+  .B-description-change-lang{
+    margin-bottom: 20px;
+  }
+}
+
+
+.setting-input-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .P-add-email-btn{
+    margin-top: 0 !important;
+  }
+}
+
+.email-list-box{
+  cursor: pointer;
+
+  .P-email-list-text{
+    display: flex;
+    align-items: center;
+    p{
+      margin-right: 15px;
+    }
+    &:hover{
+      .P-edit-email-icon, .P-delete-email-icon{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.P-edit-email-icon{
+  width: 15px;
+  height: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.P-delete-email-icon{
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  &:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.email-add-input-box{
+  .padding-inputs-filter{
+    width: 100%;
+  }
+}
+
+.email-list-box + .email-list-box{
+  margin-top: 15px;
+}

@@ -1,0 +1,38 @@
+.B-form-input {
+  width: 100%;
+  margin-bottom: 25px;
+
+  > h4 {
+    color: black;
+    font-weight: 300;
+  }
+
+  > input {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.B-form-submit-button {
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  font-size: 1em !important;
+  background: #ee6b45;
+}
+
+.B-sigin-form-block {
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+  margin-top: 35px;
+}

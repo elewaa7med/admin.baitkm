@@ -1,0 +1,381 @@
+@keyframes modal-content-opening {
+  from {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes modal-background-opening {
+  from {
+    background: transparentize(#000, 0.8);
+  }
+  to {
+    background: transparentize(#000, 0.7);
+  }
+}
+
+.B-modal-wrapper {
+  top: 0;
+  left: 0;
+  width: 100%;
+  right: 0;
+  height: 100vh;
+  bottom: 0;
+  z-index: 20000;
+  position: fixed;
+  animation: modal-background-opening 0.1s;
+  animation-fill-mode: forwards;
+
+  .B-modal-content {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    animation: modal-content-opening 0.2s;
+    box-shadow: 0 1px 15px 0 transparentize(#000, 0.6);
+    background: #fff;
+    animation-fill-mode: forwards;
+  }
+
+  &.B-notification-modal .B-modal-content {
+    max-width: 700px;
+    width: 100%;
+    padding: 30px;
+  }
+
+  &.B-report-text-modal .B-modal-content {
+    max-width: 450px;
+    width: 100%;
+    padding: 30px;
+  }
+
+  &.B-confirm-modal .B-modal-content {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+  }
+
+  &.B-rejection-modal .B-modal-content {
+    max-width: 640px;
+    width: 100%;
+    padding: 30px;
+  }
+
+  &.B-block-user-modal .B-modal-content {
+    max-width: 300px;
+    width: 100%;
+    padding: 30px;
+  }
+
+  &.B-approved-modal .B-modal-content {
+    max-width: 450px;
+    width: 100%;
+    padding: 30px;
+  }
+
+  &.B-restore-modal .B-modal-content {
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+  }
+  .B-slider-box{
+    video{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1000;
+      overflow: hidden;
+    }
+  }
+
+}
+
+.B-report-text {
+  margin-top: 25px;
+}
+
+.report-tex-cursor {
+  cursor: pointer;
+}
+
+.cancel-text {
+  p {
+    margin-top: 0 !important;
+  }
+}
+
+
+.G-send-radio {
+  position: relative;
+  padding: 15px;
+
+  label {
+    cursor: pointer;
+  }
+
+  input {
+    display: none;
+    cursor: pointer;
+
+    &:checked + span {
+      border: 1px solid #EE6B45;
+
+      &:before {
+        opacity: 1;
+        visibility: visible;
+
+      }
+    }
+
+  }
+
+
+  span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #7B7B7B;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 7px;
+      height: 7px;
+      background-color: #EE6B45;
+      border-radius: 50%;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+      left: 3px;
+      top: 3px;
+    }
+  }
+
+  p {
+    padding-left: 10px;
+  }
+}
+
+.G-send-radio + .G-send-radio {
+  margin-left: 20px;
+}
+
+.G-singup-input {
+}
+
+.I-personal-data-pd {
+  .send-key-from-phone {
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 100%;
+      height: 50px;
+      border: 1px solid #aeaeae;
+      padding: 0 15px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .I-personal-inputs:first-child {
+      width: 30%;
+      margin-right: 15px;
+    }
+
+    .I-personal-inputs:last-child {
+      width: 70%;
+    }
+  }
+
+  .css-yk16xz-control, .css-1pahdxg-control {
+    width: 100%;
+    height: 45px;
+    border: none !important;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    font-weight: normal;
+  }
+
+  .css-yk16xz-control:hover {
+    border: none !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .css-1okebmr-indicatorSeparator {
+    display: none !important;
+  }
+}
+
+.I-personal-data-pd {
+
+}
+
+.I-personal-data-forms {
+  .change-select .css-yk16xz-control {
+    background-color: white;
+    border: none !important;
+    color: black;
+  }
+
+  .change-select .css-1uccc91-singleValue {
+    color: black;
+  }
+}
+
+.change-color .css-1uccc91-singleValue {
+  color: #7B7B7B;
+}
+
+.G-send-key-menu {
+  display: flex;
+  align-items: center;
+}
+
+.I-G-fields-form {
+  > p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    word-break: normal;
+  }
+
+}
+
+.send-key-block {
+  margin-top: 30px;
+}
+
+
+.send-key-from-phone {
+
+  .css-1hwfws3 {
+    width: 120px;
+    height: 50px;
+    border: 1px solid #AEAEAE;
+    padding: 0 15px;
+    font-style: normal;
+    font-weight: normal;
+    box-shadow: none;
+    border-radius: 0;
+    outline: none;
+
+  }
+
+  .css-yk16xz-control, .css-1pahdxg-control {
+    outline: none !important;
+    border: 1px solid #AEAEAE !important;
+    box-shadow: none;
+    border-radius: 0;
+    height: 50px;
+    margin-right: 25px;
+    width: 100%;
+
+    &:hover {
+      border: 1px solid #AEAEAE !important;
+      box-shadow: none;
+    }
+
+    .css-1hwfws3 {
+      border: none;
+    }
+
+    .css-tlfecz-indicatorContainer {
+      padding: 4px;
+    }
+
+    .css-1gtu0rj-indicatorContainer {
+      padding: 4px;
+    }
+
+    .css-2613qy-menu {
+      z-index: 999;
+
+      option {
+        font-size: 8px;
+      }
+
+    }
+
+  }
+
+}
+
+
+.change-select {
+  z-index: 999;
+  font-size: 14px !important;
+
+  .css-1uccc91-singleValue {
+    font-size: 20px !important;
+  }
+
+  .change-select {
+    background-color: #EE6B45;
+  }
+
+  .css-9gakcf-option {
+    background-color: #EE6B45;
+  }
+
+  .css-26l3qy-menu {
+    width: 130px;
+  }
+
+  .css-1n7v3ny-option {
+    background-color: rgba(238, 107, 69, 0.36);
+    color: white;
+    cursor: pointer;
+    padding: 5px 3px !important;
+
+  }
+
+  .css-yt9ioa-option, .css-9gakcf-option {
+    padding: 5px 3px !important;
+    font-size: 14px;
+  }
+
+  .css-9gakcf-option:active, .css-1n7v3ny-option:active {
+    background-color: rgba(238, 107, 69, 0.36);
+    color: white;
+  }
+}
+
+.I-personal-inputs {
+  .css-1wa3eu0-placeholder {
+    font-size: 16px;
+  }
+  input{
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #aeaeae;
+    padding: 0 15px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+.B-log-out-modal{
+  .B-modal-content{
+    padding: 20px;
+    .B-log-out-title{
+      margin-bottom: 35px;
+    }
+  }
+
+}

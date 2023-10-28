@@ -1,0 +1,248 @@
+.B-user-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  .B-details-back {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 18px;
+      color: black;
+      text-decoration: none;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: black;
+      margin-left: 20px;
+    }
+  }
+
+  .B-block-user-btn {
+    button {
+      background-color: #163C45;
+      border: none;
+      font-size: 16px;
+      color: white;
+      width: 141px;
+      height: 41px;
+      cursor: pointer;
+    }
+  }
+}
+.B-data-table > .B-data-table-body > ul > li p, .B-data-table > .B-data-table-body > a > li p{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+overflow: hidden}
+.B-user-detail-personal-information {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+
+  .B-user-inf-title {
+    padding: 15px 27px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    h3 {
+      word-break: normal;
+    }
+  }
+
+  .B-user-personal-details {
+    width: 27%;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+
+    .B-user-curent-info {
+      padding: 27px;
+
+      .B-user-img {
+        width: 99px;
+        height: 99px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      ul {
+        margin-top: 32px;
+
+        li + li {
+          margin-top: 10px;
+        }
+
+        li {
+          list-style: none;
+
+          span {
+            font-size: 14px;
+            color: #7B7B7B;
+          }
+
+          h3 {
+            font-size: 18px;
+            color: black;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .B-user-details-charart {
+    width: 73%;
+    margin-left: 40px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2)
+
+  }
+
+
+}
+
+.B-user-details-chart-container {
+  padding: 27px;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+.B-user-details-chart-title{
+  h3{
+    span{
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}
+  .B-user-details-chart-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .B-user-details-daily {
+      max-width: 440px;
+      margin: 0 -15px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-left: 15px;
+
+      .padding-daily {
+        width: 50%;
+        padding: 15px;
+
+        .B-user-daily-box {
+
+          span {
+            font-size: 25px;
+            color: #07A75C;
+          }
+
+          p {
+            font-size: 14px;
+            color: #7B7B7B;
+            width: 110px;
+            word-break: normal;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.B-user-list {
+  .B-data-table-body {
+    li:nth-child(7){
+      overflow: visible !important;
+      >div{
+        overflow: visible !important;
+
+      }
+    }
+  }
+}
+.G-user-status-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.B-recover-login{
+  margin-right: 15px;
+  button{
+    background-color: #EE6B45;
+    border: none;
+    font-size: 16px;
+    color: white;
+    width: 141px;
+    height: 41px;
+    cursor: pointer;
+
+  }
+}
+.B-user-buttons {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1600px) {
+  .B-user-details-chart-box {
+    flex-direction: column;
+
+    .B-user-details-daily {
+      max-width: 100% !important;
+      width: 100%;
+      margin-left: 0 !important;
+      margin-top: 15px !important;
+
+      .padding-daily {
+        width: 25% !important;
+      }
+    }
+
+    .B-user-details-chart-js {
+      width: 100% !important;
+
+      canvas {
+        width: 100% !important;
+      }
+    }
+  }
+  .B-user-details-charart {
+    margin-left: 20px !important;
+  }
+
+  .B-user-inf-title {
+    padding: 15px !important;
+    font-size: 15px
+  }
+
+}
+
+@media (max-width: 991px) {
+  .B-user-inf-title{
+    font-size: 12px;
+    padding: 16px 15px !important;
+
+  }
+  .B-user-detail-personal-information .B-user-personal-details .B-user-curent-info ul li h3{
+    font-size: 12px;
+  }
+
+.B-user-details-chart-box .B-user-details-daily .padding-daily {
+  width: 50% !important;
+}
+  .B-user-details-chart-box .B-user-details-chart-js canvas{
+    height: 225px !important;
+  }
+  .B-user-details-chart-container .B-user-details-chart-box .B-user-details-daily .padding-daily{
+    padding: 5px 15px;
+  }
+}

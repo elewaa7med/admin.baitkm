@@ -1,0 +1,27 @@
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.B-loader-wrapper {
+
+  top        : 0;
+  left       : 0;
+  width      : 100%;
+  height     : 100vh;
+  z-index    : 20000;
+  display    : flex;
+  position   : fixed;
+  background : transparentize(#000, .7);
+
+  .B-loader {
+
+    width            : 50px;
+    border           : 4px solid #f3f3f3;
+    height           : 50px;
+    margin           : auto;
+    animation        : spin 1s linear infinite;
+    border-radius    : 50%;
+    border-top-color : #000;
+  }
+}

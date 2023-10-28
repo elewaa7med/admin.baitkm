@@ -1,0 +1,27 @@
+.B-create-notif {
+  button {
+    width: 120px;
+    height: 41px;
+    background-color: #163c45;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.B-notifications-list {
+  .B-data-table {
+    padding-top: 0;
+  }
+  .B-data-table-body {
+    > ul {
+      min-height: 80px !important;
+    }
+  }
+}
+.B-notification-text-style {
+  white-space: normal;
+}
